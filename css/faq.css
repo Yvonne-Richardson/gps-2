@@ -1,0 +1,120 @@
+@charset "utf-8";
+body {
+	margin: 0;
+	padding: 0;
+	background-color: var(--gpsbluetransp);
+	color: var(--gpsalmostblack);
+}
+h1 {
+	width: 80%;
+    margin: 0px auto;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	text-align: center;
+	font-size: 28px;
+	font-style:italic; 
+	font-weight: bold;
+}
+/* Clear floats after image containers */
+.row {
+	margin: 1% auto;
+	padding: 2%;
+	width: 90%;
+	background-color: var(--gpssunshine);
+	text-align: left;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  width: 80%;
+  margin: 0px auto;
+  padding: 0px;
+
+}
+
+.faqQuestion {
+	margin: 1% auto;
+	margin-top: 0% auto;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 18px;
+	color: var(--gpsgreen);
+}
+.faqAnswer {
+	margin: 2% auto;
+	color: var(--gpsalmostblack);
+	font-size: 18px;
+}
+.faqAnswer li  {
+	padding-bottom: 12px;
+}
+img {
+    width: 40%;
+	display: block;
+	margin: 0 auto;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0px;
+	text-align: center;
+ 
+}
+.footerdiv {
+	color: var(--gpsalmostblack);
+}
+
+/* smaller devices media query -- phones, etc */
+@media only screen and (max-width: 600px) {
+body {
+	background-color: var( --gpssunshinehighlightdark);
+}
+.row {
+	margin: 0 auto;
+	padding: 2%;
+	width: 65%;
+	background-color: var(--gpssunshine);
+}
+}
+
+/* tablets and large phones  */
+@media (min-width: 600px) {
+body {
+	background-color: var(--gpsgreenlight);
+}
+.row {
+	background-color: var(--gpssunshine);
+}
+}
+/*  landscape mode */
+@media screen and (orientation:landscape) and (min-width:768px) {
+body {
+	background-color: var(--gpsblue);
+}
+.row {
+background-color: var(--gpssunshinedark);
+}
+}
+
+/* laptops and desktops */
+@media screen and (min-width:992px) {
+body {
+	background-color: var(--gpsbluetransp);
+	color: var(--gpssunshine);
+}
+.row {
+	background-color: var(--gpssunshinedark);
+	color:  var(--gpsbluetransp);
+}
+}
+
+/* extra large monitors */
+@media screen and (min-width:1200px) {
+body {
+	background-color: var(--gpsbluetransp);
+	color: var(--gpssunshine);
+}
+.row {
+	background-color: var(--gpssunshinedark);
+	color:  var(--gpsbluetransp);
+}
+}

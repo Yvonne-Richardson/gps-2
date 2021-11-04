@@ -1,0 +1,12 @@
+
+td:nth-child(1) {
+  width: 10px;
+	background-color: var( --gpssunshine);
+ 	color: var( --gpssunshine);
+  }
+td:nth-child(2) {
+	
+  width: 200px;
+
+ 
+}

@@ -1,0 +1,21 @@
+:root {
+ --gpssunshine: rgb(246,246,246);
+ --gpsgreen: rgb(70,88,13);
+ --gpsgreentransp: rgba(70,88,13,0.3);
+ --gpsblue:	 rgb(68,93,113);
+ --gpsbluetransp:	 rgba(68,93,113,0.5);
+ --gpsgreenleaf: rgb(239,250,27);
+ --gpsgreenlight: rgb(144,151,11);
+ --gpssunshinedark:  rgb(255,238,209);
+ --gpsosunshinedark:  rgba(255,238,209,0.6);
+ --gpssunshinehighlight:  rgb(248,186,113);
+ --gpssunshinehighlightdark:  rgb(195,142,66);
+ --gpsmarigold:  rgb(252,180,0);
+ --gpsmarigolddark:  rgb(194,115,1);
+ --gpsalmostblack:  rgb(21,25,3);
+ --gpsalmostblacktransp:  rgba(21,25,3,0.6);
+ --gpstransp1: rgb(50,172,177);
+ --gpsborder: rgb(3,1,126);
+ --gpshero: rgb(253,221,11);
+ --gpsborderbottomcolor: rgb(190,35,211);
+}

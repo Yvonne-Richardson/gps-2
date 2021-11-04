@@ -1,0 +1,39 @@
+
+.pretty-table {
+	color: var(--gpsalmostblack);
+}
+.pretty-table:hover {
+	background-color: var(--gpsosunshinedark);
+}
+.pretty-table:active {
+	background-color: var(--gpsgreenleaf);
+	color: var(--gpsgreen);
+	font-weight: bold;
+}
+/* smaller devices media query -- phones, etc */
+
+@media only screen and (max-width: 600px) {
+
+}
+
+/* tablets and large phones  */
+@media (min-width: 600px) {
+
+}
+
+/*  landscape mode */
+
+@media screen and (orientation:landscape) and (min-width:768px) {
+
+}
+
+/* laptops and desktops */
+
+@media screen and (min-width:992px) {
+
+}
+
+/* extra large monitors */
+
+@media screen and (min-width:1200px) {
+}

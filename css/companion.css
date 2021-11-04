@@ -1,0 +1,136 @@
+@charset "utf-8";
+body {
+	margin: 0;
+	padding: 0;
+	background-color: var(--gpsblue);
+	color: var(--gpsalmostblack);
+}
+.companionIntro {
+	width: 95%;
+	margin: 5px auto;
+	margin-left: 5px;
+	margin-right: 5px;
+	border: 10px solid var(--gpsgreen);
+	padding: 10px;
+	display: inline-block;
+}
+/* Clear floats after image containers */
+.row {
+	margin: 5px auto;
+	padding: 10px;
+	background-color: var(--gpsblue);
+	text-align: center;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  width: 80%;
+  margin: 0px auto;
+  padding: 0px;
+}
+.columnSpace {
+  width: 1%;
+  margin: 1% auto;
+  padding: 1%;
+display: inline-block;
+}
+.column {
+   width: 20%;
+  margin: 0px auto;
+  padding: 1%;
+  display: inline-block;
+	overflow: hidden;
+ background-color:  var(--gpstransp1);	
+}
+.column img {
+     width:  100%;
+}	
+.columnName {
+	margin: 0px;
+	padding: 0px;
+	display: block;
+	text-align:center;
+	background-color:  var(--gpsgreenleaf);		
+}
+.dbNames {
+	width: 95%;
+	margin: 5px auto;
+	margin-left: 5px;
+	margin-right: 5px;
+	border: 10px solid var(--gpsgreenleaf);
+	padding: 10px;
+	background-color: var(--gpssunshine);
+	display: inline-block;
+}
+.footerdiv {
+	color: var(--gpsgreenlight);
+}
+/* smaller devices media query -- phones, etc */
+@media only screen and (max-width: 600px) {
+body {
+	background-color: var(--gpsgreenlight);
+}
+.companionIntro {	
+	border: 10px solid var(--gpsgreen);
+}
+.footerdiv {
+	color: var(--gpsalmostblack);
+}	
+}
+
+/* tablets and large phones  */
+@media (min-width: 600px) {
+body {
+	background-color: var(--gpsmarigold);
+}
+.companionIntro {
+
+	border: 10px solid var(--gpsgreen);
+}
+.row {
+	background-color: var(--gpsmarigold);
+}
+.dbNames {
+	background-color: var(--gpssunshine);
+}
+}
+/*  landscape mode */
+@media screen and (orientation:landscape) and (min-width:768px) {
+body {
+	background-color: var(--gpsgreen);
+	color: var(--gpsalmostblack);
+}
+.row {
+	background-color: var(--gpsblue);
+}
+.dbNames {
+	bottom: -1px;
+}
+.companionIntro {
+	border: 10px solid var(--gpsgreenlight);
+}
+}
+
+/* laptops and desktops */
+@media screen and (min-width:992px) {
+body {
+	background-color: var(--gpsblue);
+	color: var(--gpsalmostblack);
+}
+.companionIntro {
+	border: 10px solid var(--gpsgreen);
+}
+}
+
+/* extra large monitors */
+@media screen and (min-width:1200px) {
+body {
+	background-color: var(--gpsblue);
+	color: var(--gpsalmostblack);
+}
+.companionIntro {
+	border: 10px solid var(--gpsgreen);
+}
+
+}

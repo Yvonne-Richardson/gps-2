@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>The Gardener's Planting System</title>
+<meta name="description" content="Gardeners Planting System">
+<meta name="keywords" content="garden,planting,planning,fruit,vegetable,flower,edible,tree,herb,annual,perennial,biennial">
+<link href="css/colors.css" rel="stylesheet" type="text/css">
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/gps.js"></script>
+</head>
+<body>
+<header class="mainHeader"> <img src="images/gpsLogo.gif" width="200" height="135" alt="Class Logo"/>
+  <h1>The Gardener's Planting System</h1>
+
+<div id="hList" w3-include-html="./headerMainNav.html"></div> 
+</header>
+<main>
+  <form action="php/selectdb.php" method="post" autocomplete="on">
+  	 <div class="table">
+    <ul class="nav2">
+      <li>
+        <ul class="homeNav">
+          <li>
+            <input type="submit"  class="dbselect" name="lifecycle" value="Annuals">
+          </li>
+          <li>
+            <input type="submit"  class="dbselect" name="lifecycle" value="Perennials">
+          </li>
+          <li>
+            <input type="submit"  class="dbselect" name="lifecycle" value="Biennials">
+          </li>
+        </ul>
+      </li>
+      <li class="plantType" >
+        <ul class="homeNav" >
+          <li>
+            <input type="submit" class="dbselect" name="category" value="Edibles">
+          </li>
+          <li>
+            <input type="submit"  class="dbselect" name="category" value="Flowers">
+          </li>
+     	   <li>
+            <input type="submit"  class="dbselect" name="category" value="Grains">
+          </li>
+		   <li>
+            <input type="submit"  class="dbselect" name="category" value="Trees">
+          </li>
+        </ul>
+      </li>
+	  <li class="plantType" >
+        <ul class="homeNav" >
+          <li>
+            <input type="submit" class="dbselect" name="category" value="Weeds">
+          </li>
+         
+          <li>
+            <input type="submit"  class="dbselect" name="category" value="Ferns">
+          </li>
+		  <li>
+            <input type="submit" class="dbselect" name="category" value="Moss">
+          </li>
+        </ul>
+      </li>
+    </ul>
+		 </div>
+  </form>
+  <div class="dbEntries">
+    <h3>How to use the Planting System </h3>
+    <p>The GPS tells you many things about the care and feeding of several types of plants.</p>
+    <p>This includes whether you can start a plant indoors, how many days it takes to germinate or flower, and how long before transplanting outdoors. It will also indicate the number of days between planting and harvest, and display images of each plant at various stages of growth. </p>
+    <p>You can choose one of the six buttons to sort the plants by type, and then select a plant for all of its information.</p>
+  </div>
+</main>
+<div w3-include-html="./footer.html"></div> 
+<script>
+includeHTML();
+</script>
+</body>
+</html>

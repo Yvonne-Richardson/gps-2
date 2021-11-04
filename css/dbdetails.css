@@ -1,0 +1,136 @@
+@charset "utf-8";
+.compContainer {
+	margin: 0px auto;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	width: 100%;
+	background-color: var(--gpssunshine);
+}
+.compQ {
+	width: 95%;
+	margin: auto;
+	margin-left: auto;
+	margin-right: auto;
+	border: 10px solid var(--gpsmarigold);
+	padding: 5px;
+	text-align: left;
+}
+/* Clear floats after image containers */
+.compQ::after {
+  content: "";
+  clear: both;
+  display: table;
+  width: 80%;
+  margin: 0px auto;
+  padding: 0px;
+}
+.dbCompQ {
+	top: -10px;
+	width: 20%;
+	padding: 5px;
+	float: left;
+	display: inline-block;
+}
+.compPair {
+	width: 90%;
+	margin: 0 auto;
+	border: 10px solid var(--gpsmarigold);
+	padding: 5px;
+	display: inline-block;
+}
+.dbCompP {
+	top: -10px;
+	width: 45%;
+	padding: 5px;
+	float: left;
+	display: inline-block;
+}
+.dbCompP h4 {
+	top: 5%;
+}
+.dbCompP img {
+	min-width: 50%;
+	max-width: 80%;
+}
+.vert3 {
+	height: 30%;
+	float: left;
+}
+.footerdiv {
+	color: var(--gpsblue);
+}
+
+/* smaller devices media query -- phones, etc */
+@media only screen and (max-width: 600px) {
+.compPair {
+	width: 90%;
+	margin: 5px;
+	border: 10px solid var(--gpsmarigold);
+	padding: 5px;
+	background-color: var(--gpssunshine);
+	display: inline-block;
+}
+.dbCompP {
+	top: -10px;
+	width: 80%;
+	padding: 5px;
+	float: left;
+	display: inline-block;
+}
+}
+
+/* tablets and large phones  */
+@media (min-width: 600px) {
+.compPair {
+	width: 90%;
+	margin: 5px;
+	border: 10px solid var(--gpsmarigold);
+	padding: 5px;
+	background-color: var(--gpssunshine);
+	display: inline-block;
+}
+}
+
+/*  landscape mode */
+@media screen and (orientation:landscape) and (min-width:768px) {
+.compPair {
+	width: 90%;
+	margin: 5px;
+	border: 10px solid var(--gpsmarigold);
+	padding: 5px;
+	background-color: var(--gpssunshine);
+	display: inline-block;
+}
+}
+
+/* laptops and desktops */
+@media screen and (min-width:992px) {
+.compPair {
+	width: 90%;
+	margin: 5px;
+	border: 10px solid var(--gpsmarigold);
+	padding: 5px;
+	background-color: var(--gpssunshine);
+	display: inline-block;
+}
+}
+
+/* extra large monitors */
+@media screen and (min-width:1200px) {
+.compQ {
+	margin: 5px;
+	border: 10px solid var(--gpsmarigold);
+	padding: 5px;
+	background-color: var(--gpssunshine);
+	display: inline-block;
+}
+.compPair {
+	width: 90%;
+	margin: 5px;
+	border: 10px solid var(--gpsmarigold);
+	padding: 5px;
+	background-color: var(--gpssunshine);
+	display: inline-block;
+}
+
+}
